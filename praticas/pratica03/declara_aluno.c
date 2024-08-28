@@ -9,7 +9,7 @@ char sexo = 'M' ;
 printf("Matricula: %08ld\n", matricula) ;
 printf("Idade: %02i anos\n", idade) ;
 printf("Altura: %01.2f m\n", altura) ;
-printf("Peso: %02.1f kg\n", peso) ;
+printf("Peso: %03.1f kg\n", peso) ;
 printf("Sexo: %c\n", sexo) ;
 
   return 0 ;
