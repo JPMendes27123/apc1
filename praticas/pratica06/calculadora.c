@@ -21,6 +21,7 @@ int main () {
         if (n2 == 0) { printf("Nao eh possivel fazer a divisao por zero");
         } else   printf("%.2f / %.2f = %.2f", n1, n2, n1/n2);
     } else printf("Operacao invalida");
-
+        printf("Teste");
+        
     return 0;
 }
