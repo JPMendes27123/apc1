@@ -22,6 +22,6 @@ int main () {
         } else   printf("%.2f / %.2f = %.2f", n1, n2, n1/n2);
     } else printf("Operacao invalida");
         printf("Teste");
-        
+        printf("Alo");
     return 0;
 }
