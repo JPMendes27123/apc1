@@ -2,8 +2,11 @@
 #define SIZE 300
 char nome [SIZE][31];
 char sobrenome [SIZE][31];
-unsigned long telefone [SIZE];
-unsigned long matricula [SIZE];
+char telefone [SIZE][12];
+char matricula [SIZE][11];
+char nomedamae [SIZE][31];
+char nomedopai [SIZE][31];
+char cep [SIZE][10];
 int op;
 
 int main () {
@@ -16,26 +19,37 @@ int main () {
     scanf("%30s", sobrenome[linha]);
 
     printf("\nDigite o telefone: ");
-    scanf("%12lu", telefone[linha]);
+    scanf("%11s", telefone[linha]);
 
     printf("\nDigite a matricula: ");
-    scanf("%11lu", matricula[linha]);
+    scanf("%10s", matricula[linha]);
+
+    printf("\nDigite o nome da mae: ");
+    scanf("%30s", nomedamae[linha]);
+
+    printf("\nDigite o nome do pai: ");
+    scanf("%30s", nomedopai[linha]);
+
+    printf("\nDigite o CEP: ");
+    scanf("%9s", cep[linha]);
 
     printf("\nDigite 1 para continuar ou outro valor para sair: \n");
     scanf("%i", &op);
 
-    printf("\n%12lu\n", telefone[linha]);
+    //printf("\n%s\n", telefone[linha]);
 
-    printf("\n%s\t%s\n", nome[linha], sobrenome[linha]);
+    //printf("\n%s\t%s\n", nome[linha], sobrenome[linha]);
 
-    printf("\n%11lu\n", matricula[linha]);
+    //printf("\n%s\n", matricula[linha]);
 
     linha++;
     }while(op == 1 && linha < SIZE );
 
-    //for (int i = 0; i < linha; i++){
-    //    printf("\n%s\t%s\t%s\t%s\n", nome[i], sobrenome[i], telefone[i], matricula[i]);
-    //}
+    printf("\n-------------------------------------------------\n");
+    printf("\n--------------- Lista de entradas ---------------\n");
+    for (int i = 0; i < linha; i++) {
+        printf("\n| Nome: %s %s\t| Telefone: %s\t| Matricula: %s\t| Nome da mae: %s\t| Nome do pai: %s\t| CEP: %s |\n", nome[i], sobrenome[i], telefone[i], matricula[i], nomedamae[i], nomedopai[i], cep[i]);
+    }
   
     return 0;
 }
