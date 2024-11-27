@@ -23,9 +23,9 @@ int main() {
     int linha = 0;
     char op;
 
-    printf("\n------------------------------------------------------\n");
-    printf("\n------------------- Menu Principal -------------------\n");
-    printf("\n------------------------------------------------------\n\n");
+    printf("\n----------------------------------------------------------------\n");
+    printf("\n------------------------ Menu Principal ------------------------\n");
+    printf("\n----------------------------------------------------------------\n\n");
 
     do {
         printf("Digite 1 para iniciar o cadastro ou 0 para sair:\n");
@@ -78,9 +78,9 @@ int main() {
     getchar();
 
     if (b == '1') {
-        printf("\n-------------------------------------------------\n");
-        printf("\n--------------- Lista de entradas ---------------\n");
-        printf("\n-------------------------------------------------\n");
+        printf("\n-----------------------------------------------------------\n");
+        printf("\n-------------------- Lista de entradas --------------------\n");
+        printf("\n-----------------------------------------------------------\n");
         for (int i = 0; i < linha; i++) {
             printf("| Nome: %s\t| Telefone: %s\t| Matricula: %s\t| Nome da mae: %s\t| Nome do pai: %s\t| CEP: %s |\n",
                    cadastros[i].nome, cadastros[i].telefone, cadastros[i].matricula,
